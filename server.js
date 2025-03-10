@@ -9,11 +9,6 @@ const roleRoutes = require("./routes/roleRoutes");
 const app = express();
 app.use(bodyParser.json());
 
-app.use("/",(req, res, next) => {
-  console.log("hello");
-  res.send("hello");
-
-})
 app.use("/users", userRoutes);
 app.use("/roles", roleRoutes);
 
